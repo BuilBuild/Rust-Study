@@ -1,0 +1,24 @@
+/*
+ * @Author: LeiJiulong
+ * @Date: 2025-07-02 20:33:14
+ * @LastEditors: LeiJiulong && lei15557570906@outlook.com
+ * @LastEditTime: 2025-07-02 20:33:15
+ * @Description: 
+ */
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "test",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "rust: cargo test"
+		}
+	]
+}

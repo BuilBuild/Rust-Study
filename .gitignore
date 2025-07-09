@@ -24,4 +24,5 @@ Cargo.lock
 */Cargo.lock
 */*/target
 */.vscode
+*/.vscode/*
 
