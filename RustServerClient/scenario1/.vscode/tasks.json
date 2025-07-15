@@ -1,0 +1,48 @@
+/*
+ * @Author: LeiJiulong
+ * @Date: 2025-07-14 15:20:10
+ * @LastEditors: LeiJiulong && lei15557570906@outlook.com
+ * @LastEditTime: 2025-07-14 15:44:49
+ * @Description: 
+ */
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"run"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "MainTask"
+		},
+		{
+			"type": "shell",
+			"command": "cargo run -p tcpclient",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "tcpclient",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"command": "cargo run -p tcpserver",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "tcpserver",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
