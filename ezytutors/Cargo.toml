@@ -1,9 +1,8 @@
 [package]
 name = "ezytutors"
 version = "0.1.0"
-edition = "2024"
 
 [workspace]
-members = ["tutor-nodb"]
+members = ["tutor-nodb", "tutor-db"]
 
 [dependencies]
