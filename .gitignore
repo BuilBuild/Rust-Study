@@ -26,4 +26,7 @@ Cargo.lock
 */.vscode
 */.vscode/*
 /*/Cargo.lock
+*/*/.rustc_info.json
+*/target/*
+*/target/.rustc_info.json
 
