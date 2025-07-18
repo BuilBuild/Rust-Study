@@ -2,7 +2,7 @@
  * @Author: LeiJiulong
  * @Date: 2025-07-18 12:45:58
  * @LastEditors: LeiJiulong && lei15557570906@outlook.com
- * @LastEditTime: 2025-07-18 13:23:41
+ * @LastEditTime: 2025-07-18 13:46:05
  * @Description: 
  */
 
@@ -19,3 +19,4 @@ pub async fn health_check_handler(
     *visit_count += 1;
     Ok(HttpResponse::Ok().json(&response))
 }
+
