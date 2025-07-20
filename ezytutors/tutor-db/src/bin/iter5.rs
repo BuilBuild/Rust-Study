@@ -2,7 +2,7 @@
  * @Author: LeiJiulong
  * @Date: 2025-07-18 12:30:06
  * @LastEditors: LeiJiulong && lei15557570906@outlook.com
- * @LastEditTime: 2025-07-18 19:16:30
+ * @LastEditTime: 2025-07-20 14:23:49
  * @Description: 
  */
 
@@ -42,6 +42,7 @@ async fn main() -> io::Result<()>{
             .app_data(shared_data.clone())
             .configure(general_routes)
             .configure(course_routes)
+            .configure(tutor_routes)
     };
 
     let host_port = env::var("HOST_PORT").expect("HOST:PORT address is not set in .env file");
