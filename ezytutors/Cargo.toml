@@ -3,6 +3,6 @@ name = "ezytutors"
 version = "0.1.0"
 
 [workspace]
-members = ["tutor-nodb", "tutor-db"]
+members = ["tutor-nodb", "tutor-db", "tutor-web-app-ssr", "tutor-web-service"]
 
 [dependencies]
