@@ -2,7 +2,7 @@
  * @Author: LeiJiulong
  * @Date: 2025-07-21 00:41:05
  * @LastEditors: LeiJiulong && lei15557570906@outlook.com
- * @LastEditTime: 2025-07-21 01:03:20
+ * @LastEditTime: 2025-07-21 20:01:37
  * @Description: 
  */
 #[path = "../iter5/mod.rs"]
@@ -33,7 +33,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .app_data(Data::new(tera))
             .app_data(shared_data.clone())
-            // .configure(app_config)
+            .configure(app_config)
     })
     .bind(&host_port)?
     .run()

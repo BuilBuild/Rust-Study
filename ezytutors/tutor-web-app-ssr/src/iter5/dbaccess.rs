@@ -2,7 +2,7 @@
  * @Author: LeiJiulong
  * @Date: 2025-07-21 00:43:13
  * @LastEditors: LeiJiulong && lei15557570906@outlook.com
- * @LastEditTime: 2025-07-21 01:25:36
+ * @LastEditTime: 2025-07-21 20:10:46
  * @Description:
  */
 
@@ -10,7 +10,7 @@ use crate::errors::EzyTutorError;
 use crate::model::*;
 use sqlx::postgres::PgPool;
 
-pub async fn get_user_record(pool: &PgPool, username: String) -> Result<User, EzyTutorError> {
+pub async fn get_user_record(pool: &PgPool, username: &String) -> Result<User, EzyTutorError> {
     
     let user_row = sqlx::query_as!(
         User,
